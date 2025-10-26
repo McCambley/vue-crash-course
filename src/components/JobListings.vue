@@ -1,11 +1,10 @@
 <script setup>
-import { ref, defineProps } from 'vue'
+import { ref, defineProps, onMounted } from 'vue'
 import jobData from '@/jobs.json'
 import JobListing from './JobListing.vue'
 import { RouterLink } from 'vue-router'
 
-const jobs = ref(jobData)
-console.log(jobs.value)
+const jobs = ref([])
 
 defineProps({
   limit: Number,
@@ -13,6 +12,17 @@ defineProps({
     type: Boolean,
     default: false,
   },
+})
+
+onMounted(async () => {
+  try {
+    const response = await fetch('http://localhost:8000/jobs')
+    const data = await response.json()
+
+    jobs.value = data
+  } catch (error) {
+    console.error(error)
+  }
 })
 </script>
 
