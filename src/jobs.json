@@ -111,6 +111,34 @@
         "contactEmail": "kuqekut@mailinator.com",
         "contactPhone": "+1 (102) 296-3801"
       }
+    },
+    {
+      "id": "a079",
+      "title": "Lester Fuller",
+      "type": "Remote",
+      "location": "Fugiat neque irure a",
+      "description": "Asperiores architect",
+      "salary": "$150K - $175K",
+      "company": {
+        "name": "Hawkins and Acosta Inc",
+        "description": "Similique odit accus",
+        "contactEmail": "pohuhijat@mailinator.com",
+        "contactPhone": "+1 (818) 256-7888"
+      }
+    },
+    {
+      "id": "c08c",
+      "title": "Delilah Lowery",
+      "type": "Full-Time",
+      "location": "Unde fugiat ipsa no",
+      "description": "Provident magni sed",
+      "salary": "$50K - $60K",
+      "company": {
+        "name": "Frazier and Terry LLC",
+        "description": "Corrupti atque iust",
+        "contactEmail": "lixocus@mailinator.com",
+        "contactPhone": "+1 (301) 607-7768"
+      }
     }
   ]
 }
