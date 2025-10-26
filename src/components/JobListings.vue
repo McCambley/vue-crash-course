@@ -20,7 +20,7 @@ defineProps({
 
 onMounted(async () => {
   try {
-    const response = await fetch('http://localhost:8000/jobs')
+    const response = await fetch('/api/jobs')
     const data = await response.json()
 
     state.jobs = data
